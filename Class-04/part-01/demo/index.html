@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- link html with our style sheet -->
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4f7fe5e387.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="assets/logo.png" alt="logo">
+        </section>
+        <nav>
+            <ul> <!-- show them the ordered list   -->
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#form">Forms</a></li>
+                <li><a href="imgs/logo.png">Contact</a></li>
+                <li><a href="https://www.google.com">More Info</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Flighty...</h1>
+        </section>
+
+        <section id="med-sec">
+            <section id="img-part">
+                <img src="assets/image1.png" alt="">
+            </section>
+            <section id="par-part">
+                <p>Go ahead, complete your flight
+                    and tick away those destinations
+                    from your dream trip list. We manage all your
+                    booking hassles and ensure to keep in budget..
+                </p>
+            </section>
+        </section>
+
+
+        <section>
+            <section id="sub-title">
+                <h2>Todays Flights</h2>
+            </section>
+
+            <section id="Table-sec">
+                <table>
+                    <tr>
+                        <th>Flight num</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Available Seats</th>
+                        <th>Reserved Seats</th>
+                        <th>Time</th>
+                        <th>Company</th>
+                    </tr>
+                    <tr>
+                        <td>122</td>
+                        <td>Amman</td>
+                        <td>Tokyo</td>
+                        <td>26</td>
+                        <td>360</td>
+                        <td>1:00PM</td>
+                        <td>Fly Emirates</td>
+
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>Dubai</td>
+                        <td>Amman</td>
+                        <td>--</td>
+                        <td>850</td>
+                        <td>5:00 PM</td>
+                        <td>Fly Nas </td>
+
+                    </tr>
+                    <tr>
+                        <td>124</td>
+                        <td>Qatar</td>
+                        <td>Bali</td>
+                        <td>14</td>
+                        <td>450</td>
+                        <td>3:30PM</td>
+                        <td>Qatar Airways</td>
+
+                    </tr>
+
+
+                </table>
+            </section>
+        </section>
+        <section id="form-title">
+            <h3>Search For A Flight </h3>
+        </section>
+        <section>
+            <section id="form">
+                <form>
+                    <label for="From">From</label>
+                    <input type="text" name="From" id="From">
+                    <br>
+                    <label for="To">To</label>
+                    <input type="text" name="To" id="To">
+                    <br>
+                    <section id="date-inp">
+                        <input type="date">
+                        <input type="date">
+                    </section>
+
+                    <br>
+                    <select name="Price" id="Price">
+                        <option value="" disabled selected>Price</option>
+                        <option value="below 200$">below 200$</option>
+                        <option value="200-300$">200-300$</option>
+                        <option value="300-400$">300-400$</option>
+                        <option value="400-500$">400-500$</option>
+                        <option value="above 500 &">above 500 &</option>
+                    </select>
+                    <br>
+                    <button type="submit" id="submit">submit</button>
+                </form>
+            </section>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <section id="footer-logo">
+            <img src="assets/logo.png" alt="logo">
+        </section>
+        <section id="copy-rights">
+            <p> ©2022. All Rights Reserved</p>
+        </section>
+        <section id="social-media">
+            <p>Follow Us</p>
+            <i class="	fas fa-phone-alt"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-whatsapp"></i>
+        </section>
+    </footer>
+</body>
+
+</html>
