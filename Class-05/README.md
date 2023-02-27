@@ -9,7 +9,7 @@ Students will be able to:
 - Use Conditional Statements.
 
 
-## Resources:
+## Resources
 
 - [JavaScript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript?retiredLocale=ar)
 - [The Modern JavaScript Tutorial](https://javascript.info/)
