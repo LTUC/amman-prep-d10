@@ -1,6 +1,6 @@
 "use strict";
 
-const allDrinks = [];
+let allDrinks = [];
 let sectionEl = document.getElementById("sec")
 let form = document.getElementById("form");
 let tableEL = document.getElementById("table");
@@ -34,8 +34,6 @@ Drink.prototype.render = function () {
     ulEl.appendChild(liEl);
   }
 
-
-     
 }  
 Drink.prototype.renderTable= function(){
 
@@ -107,14 +105,14 @@ function renderAll(){
     allDrinks[i].renderTable()
     }
 }
-renderAll();
+// renderAll();
 
 
 function saveData(data){
   let stringArr= JSON.stringify(data);
   localStorage.setItem('drinks', stringArr);
 }
-console.log("before saving in LS", allDrinks[-1])
+console.log("before saving in LS", allDrinks)
 
 function getData(){
   let retrievedArr = localStorage.getItem('drinks');
@@ -122,7 +120,6 @@ function getData(){
   let objArray = JSON.parse(retrievedArr);
   console.log("after getting from LS ",objArray) // array of objects
 
-  //re-instantiation of new Instances
   if(objArray != null){
 
     for (let i = 0; i < objArray.length; i++) {
