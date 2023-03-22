@@ -10,6 +10,7 @@ const client = new Client(url)
 
 
 
+
 const PORT = 3001;
 const app = express();
 app.use(cors());
@@ -22,6 +23,7 @@ app.use(bodyParser.json());
 app.get('/', homeHandler);
 app.post('/addRecipe',addRecipeHandler);
 app.get('/getAllRecipes',getAllRecipesHandler);
+app.use(errorHandler);
 
 //functions
 function  homeHandler(req,res){
@@ -46,7 +48,9 @@ function addRecipeHandler(req,res){
 
     }
 
-    ).catch()
+    ).catch((err)=>{
+        errorHandler(err,req,res);
+    })
 
 }
 
@@ -55,7 +59,13 @@ function getAllRecipesHandler(req,res) {
     client.query(sql).then((result)=>{
         console.log(result);
         res.json(result.rows)
-    }).catch()
+    }).catch((err)=>{
+        errorHandler(err,req,res)
+    })
+}
+
+function errorHandler(error,req,res){
+    res.status(500).send(error)
 }
 
 client.connect().then(()=>{
