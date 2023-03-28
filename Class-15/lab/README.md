@@ -4,7 +4,7 @@
 * Today you will finish working in the movie app, by the end of this lab you should have a working deployed link of your server that you can send to your friends to try it out.
 
 ## Requirements:
-* Use the Heroku cheatsheet (as demonstrated in the demo) to deploy your server
+* Use the Railway cheatsheet (as demonstrated in the demo) to deploy your server
 
 ## Submission Instructions:
 - Submit a link for the deployed version of your code on Heroku.
